@@ -1,0 +1,59 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $light-color;
+  color: $dark-color;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+
+  .product {
+    padding: 15px;
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding: 15px;
+}

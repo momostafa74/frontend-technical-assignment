@@ -1,0 +1,113 @@
+.product {
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+
+    .product-image {
+      width: 40%;
+      margin-top: 50px;
+      margin-left: 190px;
+    }
+
+    .product-details {
+      margin-top: 50px;
+      width: 55%;
+      .rating {
+        margin: 10px 0;
+        span {
+          font-size: 18px;
+          &.filled {
+            color: gold;
+          }
+          &.empty {
+            color: #ddd;
+          }
+        }
+      }
+
+      .prices {
+        margin: 10px 0;
+        .original-price {
+          color: #888;
+          margin-right: 10px;
+        }
+        .sale-price {
+          color: red;
+          font-weight: bold;
+        }
+      }
+
+      .actions {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .quantity-container {
+          display: flex;
+          align-items: center;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          overflow: hidden;
+
+          .quantity-btn {
+            padding: 10px;
+            background-color: #f8f8f8;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              background-color: #ddd;
+            }
+          }
+
+          .quantity-input {
+            width: 50px;
+            text-align: center;
+            border: none;
+            font-size: 18px;
+          }
+        }
+
+        .buy-btn {
+          background-color: #111111;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #218838;
+          }
+        }
+      }
+
+      .social-actions {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+
+        button {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          padding: 10px;
+
+          &:hover {
+            color: #007bff;
+          }
+        }
+      }
+    }
+  }
+}

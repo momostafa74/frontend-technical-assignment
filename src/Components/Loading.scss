@@ -1,0 +1,36 @@
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; // خلفية الشاشة
+  
+    .loading-image {
+      width: 150px; // حجم الصورة
+      height: auto;
+      margin-bottom: 20px; // مسافة بين الصورة والنص
+    }
+  
+    h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  
+    .progress-bar-container {
+      width: 5%; // عرض مستطيل التقدم
+      height: 10px; // ارتفاع مستطيل التقدم
+      background-color: #e0e0e0; // لون الخلفية للمستطيل
+      border-radius: 5px; // الحواف المستديرة للمستطيل
+      overflow: hidden;
+    }
+  
+    .progress-bar {
+      height: 100%;
+      background-color: #3f2a8a; // لون مستطيل التقدم
+      transition: width 0.2s ease-in-out; // الانتقال التدريجي للعرض
+      border-radius: 5px; // الحواف المستديرة للمستطيل المتقدم
+    }
+  }
+  

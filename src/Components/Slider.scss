@@ -1,0 +1,90 @@
+.slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+    gap: 20px;
+
+    .slider-item {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      max-width: 100%;
+      background-color: #f9f9f9;
+      text-align: center;
+
+      .product-image {
+        margin-bottom: 10px;
+        margin-left: 50px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      .product-details {
+        h2 {
+          margin: 10px 0;
+        }
+
+        .prices {
+          margin: 10px 0;
+          display: flex;
+          justify-content: center;
+
+          .original-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-left: 10px;
+          }
+
+          .sale-price {
+            font-weight: bold;
+            color: #e74c3c;
+          }
+        }
+
+        .actions {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+
+          .buy-btn {
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+
+            &:hover {
+              background-color: #333;
+            }
+          }
+
+          .heart-btn {
+            background-color: rgb(245, 241, 241);
+            color: rgb(15, 15, 15);
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px;
+
+            &:hover {
+              background-color: #f0f0f0;
+            }
+          }
+        }
+      }
+    }
+}
